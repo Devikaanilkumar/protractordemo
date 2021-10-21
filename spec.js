@@ -1,11 +1,11 @@
-describe('Promise SmartBear',()=> { 
+describe('Promise SmartBear demo',()=> { 
 	it('should navigate to SmartBear Site', () => { 
 		browser.waitForAngularEnabled(false);
 		browser.get('http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx');
 		browser.getCurrentUrl().then((url) => {
             expect(url).toBe('http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx');})
 	}); 
-	it('should accept username and password and should login', () => {
+	it('accept username and password and login', () => {
 		browser.waitForAngularEnabled(false);
 		browser.get('http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx');
 		element(by.id("ctl00_MainContent_username")).sendKeys("Tester");
